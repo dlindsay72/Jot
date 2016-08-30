@@ -48,7 +48,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the button below to transcribe the audio embedded in this app." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z06-yz-TxD">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -65,6 +64,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ffR-pj-AKb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Iee-7x-bqQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="qOd-5s-p8m"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -75,8 +80,10 @@
                             <constraint firstItem="HLR-m2-ZpZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SBC-Su-A9i"/>
                             <constraint firstItem="9lA-M9-fWM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="TRj-dL-jzt"/>
                             <constraint firstItem="OU4-ry-YXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9X-MS-BFh"/>
+                            <constraint firstItem="ffR-pj-AKb" firstAttribute="centerY" secondItem="OU4-ry-YXJ" secondAttribute="centerY" id="Uph-5Q-t0o"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9lA-M9-fWM" secondAttribute="bottom" constant="20" id="pdA-pd-20B"/>
                             <constraint firstAttribute="trailing" secondItem="HLR-m2-ZpZ" secondAttribute="trailing" id="pes-bE-tJF"/>
+                            <constraint firstItem="ffR-pj-AKb" firstAttribute="centerX" secondItem="OU4-ry-YXJ" secondAttribute="centerX" id="r0z-u5-bc6"/>
                             <constraint firstItem="OU4-ry-YXJ" firstAttribute="top" secondItem="Z06-yz-TxD" secondAttribute="bottom" constant="20" id="t7e-yE-7pS"/>
                             <constraint firstItem="Z06-yz-TxD" firstAttribute="top" secondItem="HLR-m2-ZpZ" secondAttribute="bottom" constant="20" id="uun-B9-ms1"/>
                             <constraint firstAttribute="trailing" secondItem="Z06-yz-TxD" secondAttribute="trailing" constant="20" id="xta-M9-5PJ"/>
